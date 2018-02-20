@@ -54,7 +54,7 @@ Hierin zit er dus een transitie op het id "favcount".
 Eerst declareer ik die, daarna schrijf ik wat er moet gebeuren.
 De transitie moet togglen en als er op gedrukt wordt moet hij naar binnen komen bouncen.
 
-Ik gebruik de CSS van animate.css de CSS staat dit
+Ik gebruik de CSS van animate.css, in de CSS staat dit
 
 ``` css
 
