@@ -27,6 +27,11 @@ but it is one of the easiest ways to strengthen (or weaken) a design.
 
 Beide komen terug doordat ik een simpel design heb gebruikt, dat voorzichzelf werkt. De boxjes zijn per huis in een
 zelde kleur, waardoor er een hierarchy ontstaat. De gebruiker zal weten wat hij moet doen, doordat alle handelingen
-het zelfde zijn. Zo zijn er ook geen onaangekondigde interacties en is de gebruiker altijd in control. 
+het zelfde zijn. Daarnaast is er een duidelijke button aanwezig waar "meer informatie" op staat. Wat de gebruiker zou triggeren om 
+deze button te openen en te kijken wat er naar voren komt. Als de gebruiker erop gedrukt heeft, ontstaat er een animatie. Dit
+zorgt voor feedback, waardoor de gebruiker weet dat er iets gebeurde door zijn klik. Niet alleen de animatie is te zien, maar ook
+de informatie die onder de button verschuilen zat.
+
+Zo zijn er ook geen onaangekondigde interacties en is de gebruiker altijd in control. 
 
 link naar site: http://ta-creations.nl/ta-creations.nl/Frontend%20for%20Designers/Opdracht1-Marielle/
