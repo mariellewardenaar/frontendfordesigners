@@ -42,7 +42,7 @@ Uitleg van mijn code:
 Hier wordt verteld dat als er op de de button wordt gedrukt, ik wil dat hij meer informatie over het huis laat zien. 
 Daarnaast moet hij de informatie weer verstoppen als je er nog een keertje op drukt. Hij moet dus togglen.
 
-```
+``` javascript
 
 var klikbaar = document.querySelector('#info');
 var open = document.querySelector('.open');
