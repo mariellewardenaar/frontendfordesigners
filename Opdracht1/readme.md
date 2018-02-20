@@ -156,6 +156,24 @@ Ik gebruik de CSS van animate.css, in de CSS staat dit
 }
 
 ```
+Na wat testen kwam ik erachter dat de transitie niet altijd werd ingeladen, na wat hulp kwam ik er achter dat dat kwam omdat de transitie niet in de knop zelf stond maar daar buiten. Vandaar dat de transitie dan eigenlijk werd aangeroepen, nadat de knop al zichtbaar was geworden. Door de code te veranderen naar deze code:
+
+``` javascript
+
+var klikbaar = document.querySelector('#info');
+var open = document.querySelector('.open');
+var transitie = document.getElementById("favcount");
+
+
+klikbaar.addEventListener("click", function(event){
+    open.classList.toggle('open');
+    transitie.classList.toggle('bounceIn');
+  }
+);
+
+```
+werkte de transitie wel.
+
 
 Naast dat ik geen transitie in mijn code had, kwam uit het testen ook naar voren dat het niet duidelijk genoeg was dat er op het hele blok geklikt moest worden. Vanaar dat ik een button heb toegevoegd.
 In deze button staat de tekst: meer informatie, zodat het voor de gebruiker duidelijk is dat er meer informatie verschijnd als hij/zij op de button klikt. Nu wilde ik dat de tekst verandert naar: minder informatie, zodra erop de button geklikt is.
@@ -173,7 +191,25 @@ informatie.addEventListener("click",function(){
 
 Hierbij declareer ik de id info, naar informatie. Daaronder roep ik wat er moet gebeuren aan.
 
-Als er op informatie geklikt wordt moet de tekst die binnen het id info staat, veranderen naar "minder informatie"
+Als er op informatie geklikt wordt moet de tekst die binnen het id info staat, veranderen naar "minder informatie".
+
+Ook hier kwam ik erachter dat de tekst inderdaad verandere zodra erop gedrukt werd. Echter veranderde hij niet terug naar "meer informatie". Met behulp van een if/else gebeurt dit nu wel:
+
+``` javascript
+
+var informatie = document.querySelector('#info');
+
+informatie.addEventListener("click",function(){     
+	var infobox = document.getElementById("info");
+  
+  if(infobox.textContent=="minder informatie"){
+    infobox.textContent="meer informatie"; 
+  } else{
+    infobox.textContent="minder informatie"; 
+  }
+} );
+
+```
 
 
 
