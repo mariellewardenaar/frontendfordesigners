@@ -1,103 +1,87 @@
 * {
-	font-family: "Abel";
-	font-style: 16px;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
 	margin: 0;
 }
 
 .row {
 	display: flex;
 	padding: 10px;
-	cursor: pointer;
+	border-radius: 15px;
+	background-color: #529a86;
+	color: #ffffff;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 10px 0 10px;
 }
 
 .col {
 	display: inline-block;
 	width: 50%;
 	padding: 10px 0 10px 0;
+	
 }
 
 .col img {
 	width: 100%;
 }
 
-.click > ul {
+.col ul {
+	padding: 10px;
 	list-style: none;
-	padding-top: 50px;
+}
+
+.col ul li {
+	font-weight: bold;
+}
+
+button { 
+    border: none;
+	cursor: pointer;
+	border-radius: 25px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	color: #529a86;
+    text-align: center;
+    margin: 30px 0 0 20px;
+   	padding: 10px;
+}
+
+.open {
+	display: none;
+}
+
+.open1 {
+	display: none;
+}
+
+.open2{
+	display: none;
+}
+
+.open3{
+	display: none;
+}
+
+.open4{
+	display: none;
+}
+
+.open5{
+	display: none;
 }
 
 ul {
-	padding-left: 0;
+	border-radius: 15px;
+	color: #ffffff;
+	padding: 30px;
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+	background-color: #529a86;
 	list-style: none;
 }
 
 ul li {
-	padding-bottom: 10px;
 	font-weight: bold;
-
 }
-
-#open1 {
-    border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}
-
-#open2 {
-	border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}
-
-#open3 {
-	border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}
-
-#open4 {
-	border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}
-
-#open5 {
-	border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}
-
-#open6 {
-	border-radius: 0 0 15px 15px;
-	color: #ffffff;
-	display: none;
-	padding: 0 0 20px 20px;
-	background-color: #529a86;
-    margin: 0 10px 0 10px;
-}	
-
-button { 
-	border-radius: 15px 15px 0 0;
-	background-color: #529a86;
-	color: #ffffff;
-    border: none;
-    font-size: 16px;
-    text-align: left;
-    margin: 10px 10px 0 10px;
-}
-
-
