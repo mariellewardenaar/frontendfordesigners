@@ -34,4 +34,31 @@ de informatie die onder de button verschuilen zat.
 
 Zo zijn er ook geen onaangekondigde interacties en is de gebruiker altijd in control. 
 
-link naar site: http://ta-creations.nl/ta-creations.nl/Frontend%20for%20Designers/Opdracht1-Marielle/
+link naar site: http://ta-creations.nl/ta-creations.nl/login/V2%20-%20Marielle/
+
+
+Uitleg van mijn code:
+
+Hier wordt verteld dat als er op de de button wordt gedrukt, ik wil dat hij meer informatie over het huis laat zien. 
+Daarnaast moet hij de informatie weer verstoppen als je er nog een keertje op drukt. Hij moet dus togglen.
+
+```
+
+var klikbaar = document.querySelector('#info');
+var open = document.querySelector('.open');
+
+klikbaar.addEventListener("click", function(event){
+    open.classList.toggle('open');
+  }
+);
+
+```
+
+Hier declareer ik eerst dat 'klikbaar' en 'open' staan voor de id Info en class open.
+Daarna schrijf ik de code waarin verteld wordt wat er moet gebeuren.
+Klikbaar moet op het moment dat erop geklikt wordt een functie uitvoeren.
+Namelijk de classlist openen en ook togglen.
+
+
+
+
