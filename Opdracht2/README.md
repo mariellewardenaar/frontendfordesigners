@@ -66,6 +66,28 @@ function scrollnaarleft(){
 ```
 
 Als ik de transform aanpas naar de width van de afbeelding, zal er van afbeelding naar afbeelding worden gescrolld. 
-De width van de afbeelding, samen met de bijbehorende padding en margin is 733px. Ik verander -400 naar -733, en bij
+De width van de afbeelding, samen met de bijbehorende padding en margin is 733px. Ik verander -400 naar -733, en bij de scrollnaarleft verandere ik de 400px in 733px.
 
+Naast de grootte waarmee de verschuiving wordt gemaakt moet ik ook de waarde veranderen van wanneer de carrousel moet stoppen met bewegen. Deze waarde is op dit moment -1700. Daar tel ik 733px bij op, -2433. 
+
+Dit geeft het volgende effect:
+
+![alt text](https://media.giphy.com/media/4T5rHVzkgwXYjTdEHf/giphy.gif)
+
+Omdat alle afbeeldingen nu met 733px verschuiven, ontstaat er bij de laatste foto een zwart vlak naast de foto. Dit komt omdat ik de waarde van de positie naar -2433 heb gezet.
+
+Dan is blijft er nog de laatste principe over:
+
+Progressive disclosure
+Show only what is necessary on each screen. If people are making a choice, show enough information to allow them the choice, then dive into details on a subsequent screen. Avoid the tendency to over-explain or show everything all at once. When possible, defer decisions to subsequent screens by progressively disclosing information as necessary. This will keep your interactions more clear.
+
+Ook hier kwam uit de feedback naar voren dat ik dit al goed in mijn pagina had verwerkt. De pagina bestaat alleen uit de carrousel en uit de buttons die de carrousel bedienen. De gebruiker krijgt feedback zodra hij over de buttons hoverd. 
+
+![alt text](https://media.giphy.com/media/C8o78Nx4TdEgoB2Biz/giphy.gif)
+(Omdat tijdens het maken van de gif, de muis wordt weg gelaten heb ik er een < toets over heen gegooid. Zodat je kan zien wanneer er gehoverd wordt.)
+
+Daarnaast zit er ook een leuke hover over de afbeeldingen in de carrousel. 
+
+![alt text](https://media.giphy.com/media/jTHbRLyrXM4BUljKfI/giphy.gif)
+(Omdat tijdens het maken van de gif, de muis wordt weg gelaten heb ik er een < toets over heen gegooid. Zodat je kan zien wanneer er gehoverd wordt.)
 
