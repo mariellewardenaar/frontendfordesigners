@@ -84,10 +84,74 @@ Show only what is necessary on each screen. If people are making a choice, show 
 Ook hier kwam uit de feedback naar voren dat ik dit al goed in mijn pagina had verwerkt. De pagina bestaat alleen uit de carrousel en uit de buttons die de carrousel bedienen. De gebruiker krijgt feedback zodra hij over de buttons hoverd. 
 
 ![alt text](https://media.giphy.com/media/C8o78Nx4TdEgoB2Biz/giphy.gif)
+
 (Omdat tijdens het maken van de gif, de muis wordt weg gelaten heb ik er een < toets over heen gegooid. Zodat je kan zien wanneer er gehoverd wordt.)
 
 Daarnaast zit er ook een leuke hover over de afbeeldingen in de carrousel. 
 
 ![alt text](https://media.giphy.com/media/jTHbRLyrXM4BUljKfI/giphy.gif)
+
 (Omdat tijdens het maken van de gif, de muis wordt weg gelaten heb ik er een < toets over heen gegooid. Zodat je kan zien wanneer er gehoverd wordt.)
 
+De hover van de afbeeldingen heb ik met html en css gemaakt.
+
+```
+<section class="beelden">
+					<div class="overlaycon">
+						<img src="img/PALEALE.jpg" id="foto" class="image">
+						<div class="overlay">
+							<img src="img/PALEALEhover.jpg" class="image">
+						</div>
+					</div>
+					<div class="overlaycon">
+						<img src="img/karton.jpg" id="foto" class="image">
+						<div class="overlay">
+							<img src="img/kartonhover.jpg" class="image">
+						</div>
+					</div>
+					<div class="overlaycon">
+						<img src="img/viltjes.jpg" id="foto" class="image">
+						<div class="overlay">
+							<img src="img/viltjeshover.jpg" class="image">
+						</div>
+					</div>
+					<div class="overlaycon">
+						<img src="img/glazen.jpg" id="foto" class="image">
+						<div class="overlay">
+							<img src="img/glazenhover.jpg" class="image">
+						</div>
+					</div>
+					<div class="overlaycon">
+						<img src="img/IPA.jpg" id="foto" class="image">
+						<div class="overlay">
+							<img src="img/IPAhover.jpg" class="image">
+						</div>
+					</div>
+		</section>
+```
+De afbeeldingen zitten in de section class beelden, die wordt aangeroepen in de functie om alle afbeeldingen te laten bewegen. Verder zitten de 2 afbeeldingen die bij elkaar horen in 1 class. 1 "normale" afbeelding & de hover versie. Via deze css wordt de hover geactiveerd 
+
+```css
+.overlaycon{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.overlaycon:hover .overlay {
+  opacity: 1;
+}
+
+.image {
+	width: 693px;
+	height: 693px;
+}
+```
