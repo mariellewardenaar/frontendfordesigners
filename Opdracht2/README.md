@@ -129,7 +129,7 @@ De hover van de afbeeldingen heb ik met html en css gemaakt.
 					</div>
 		</section>
 ```
-De afbeeldingen zitten in de section class beelden, die wordt aangeroepen in de functie om alle afbeeldingen te laten bewegen. Verder zitten de 2 afbeeldingen die bij elkaar horen in 1 class. 1 "normale" afbeelding & de hover versie. Via deze css wordt de hover geactiveerd 
+De afbeeldingen zitten in de section class beelden, die wordt aangeroepen in de functie om alle afbeeldingen te laten bewegen. Verder zitten de 2 afbeeldingen die bij elkaar horen in 1 class. 1 "normale" afbeelding & de hover versie. Via deze css wordt de hover geactiveerd: 
 
 ```css
 .overlaycon{
