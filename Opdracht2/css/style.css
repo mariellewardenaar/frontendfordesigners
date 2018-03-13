@@ -1,0 +1,82 @@
+* {
+	background-color: #000000;
+	overflow-x: hidden;
+}
+
+main {
+	width: 100%;
+}
+
+section {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+	height: 80%;
+}
+
+section img {
+	padding: 20px;
+	width: 40%;
+}
+
+.buttons {
+	padding: 740px 0 0 0;
+}
+
+.buttons img {
+	margin: 0 500px 0 500px;
+}
+
+/* om de knoppen te laten draaien bij een hover */
+ 
+.buttons img:hover{
+	animation: roll 3s infinite;
+	transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.terug {
+	left: 10px;
+	position: fixed;
+}
+
+.verder {
+	right: 10px;
+	position: fixed;
+}
+
+/* voor de hover img over de img in de carrousel :*/
+
+.overlaycon{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.overlaycon:hover .overlay {
+  opacity: 1;
+}
+
+.image {
+	width: 693px;
+	height: 693px;
+}
+
+
