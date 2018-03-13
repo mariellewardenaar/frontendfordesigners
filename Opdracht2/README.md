@@ -1,3 +1,5 @@
+![alt text](http://www.giphy.com/gifs/TFwPbMz584cQRApHfg)
+
 Voor opdracht twee heb ik een carrousel uitgewerkt. Deze is te bedienen via de buttons op de pagina, maar ook via de pijltjestoetsen op het toetsenbord.
 Hierbij heb ik gewerkt vanuit de 3 Principles of User Interface Design.
 
