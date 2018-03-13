@@ -1,5 +1,3 @@
-![alt text](https://media.giphy.com/media/TFwPbMz584cQRApHfg/giphy.gif)
-
 Voor opdracht twee heb ik een carrousel uitgewerkt. Deze is te bedienen via de buttons op de pagina, maar ook via de pijltjestoetsen op het toetsenbord.
 Hierbij heb ik gewerkt vanuit de 3 Principles of User Interface Design.
 
@@ -7,6 +5,8 @@ One primary action per screen
 Every screen we design should support a single action of real value to the person using it. This makes it easier to learn, easier to use, and easier to add to or build on when necessary. Screens that support two or more primary actions become confusing quickly. Like a written article should have a single, strong thesis, every screen we design should support a single, strong action that is its raison d'etre.
 
 Er speelt 1 actie een grote rol op mijn pagina, het bewegen van de carrousel. Dit kan echter op twee manieren, door op de buttons te drukken of door de Arrow keys op het toetsenbord te gebruiken. 
+
+![alt text](https://media.giphy.com/media/TFwPbMz584cQRApHfg/giphy.gif)
 
 Voor het werken van de Arrow Keys heb ik de volgende code gebruikt:
 
@@ -31,12 +31,15 @@ Very few interactions are meant to be the last, so thoughtfully design a next st
 
 Nu bestaat de code uit een transform van 400px. 
 
+![alt text](https://media.giphy.com/media/cRMNjwuVyW45JOmNEE/giphy.gif)
+
 ```js
 var buttonterug = document.querySelector('.terug');
 var buttonverder = document.querySelector('.verder');
 var verschuiven = document.querySelector('.beelden');
 
-buttonverder.addEventListener("click", scrollnaarright); // laat de button de sectie:beelden naar rechts verschuiven
+buttonverder.addEventListener("click", scrollnaarright); // laat de sectie:beelden naar rechts verschuiven als er op de button gedrukt wordt
+
 function scrollnaarright(){
 	var positie = verschuiven.getBoundingClientRect(); //hierdoor wordt er gekeken naar de positie zodra de sectie:beelden verschuifd
 	if( positie.x < -1700){ // als de positie groter is dan -1700px, moet de sectie stoppen met verschuiven
@@ -48,6 +51,21 @@ function scrollnaarright(){
 	}
 }
 
+buttonterug.addEventListener("click", scrollnaarleft); // laat de sectie:beelden naar links verschuiven als er op de button gedrukt wordt
+
+function scrollnaarleft(){
+	var positie = verschuiven.getBoundingClientRect(); //hierdoor wordt er gekeken naar de positie zodra de sectie:beelden verschuifd
+	if( positie.x > -8){ // als de positie groter is dan -8px, moet de sectie stoppen met verschuiven
+		verschuiven.style.transform += 'translateX(0)';
+	}
+	else {
+	verschuiven.style.transform += 'translateX(400px)'; //als hij niet groter is dan -8px, verschuifd de sectie met 400px
+}
+}
+
 ```
 
 Als ik de transform aanpas naar de width van de afbeelding, zal er van afbeelding naar afbeelding worden gescrolld. 
+De width van de afbeelding, samen met de bijbehorende padding en margin is 733px. Ik verander -400 naar -733, en bij
+
+
