@@ -6,12 +6,12 @@ buttonverder.addEventListener("click", scrollnaarright);
 // laat de button de sectie naar rechts verschuiven
 function scrollnaarright(){
 	var positie = verschuiven.getBoundingClientRect(); //hierdoor wordt er gekeken naar de positie zodra die verschuifd
-	if( positie.x < -1700){ // als de positie groter is dan -1700 moet hij stoppen met verschuiven
+	if( positie.x < -2433){ // als de positie groter is dan -1700 moet hij stoppen met verschuiven
 		verschuiven.style.transform += 'translateX(0)';
 	}
 	else{
 		console.log("ik kom hier" + verschuiven)
-		verschuiven.style.transform += `translateX(-400px)`; //anders verschuifd de sectie met -400px
+		verschuiven.style.transform += `translateX(-733px)`; //anders verschuifd de sectie met -400px
 	}
 }
 
@@ -25,7 +25,7 @@ function scrollnaarleft(){
 		verschuiven.style.transform += 'translateX(0)';
 	}
 	else {
-	verschuiven.style.transform += 'translateX(400px)'; //anders verschuifd de sectie met 400px
+	verschuiven.style.transform += 'translateX(733px)'; //anders verschuifd de sectie met 400px
 }
 }
 
