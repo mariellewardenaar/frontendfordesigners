@@ -1,6 +1,6 @@
 * {
-margin: 0;
-padding: 0;
+	margin: 0;
+	padding: 0;
 	overflow-x: hidden;
 }
 
@@ -19,6 +19,7 @@ section.movies {
 	position: absolute;
 	display: flex;
 	flex-direction: row;
+	transition: all 0.8s;
 	/*height: 80%;*/
 }
 
@@ -28,22 +29,24 @@ div.film {
 	padding: 0 20px 0 20px;
 	text-align: center;
 	opacity: 0.8;
+	transition: all 0.8s;
 }
 
 .film:hover {
   opacity: 1;
+  transition: all 0.8s;
  }
 
 div img {
 	padding: 20px 0 20px 0;
-	width: 450px;
-	height: 630px;
+	width: 430px;
+	height: 590px;
 }
 
 span.title {
 	text-transform: uppercase;
 	font-family: 'Faster One', cursive;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .buttons {
@@ -52,7 +55,7 @@ span.title {
 	justify-content: space-between;
 	font-size: 40px;
 	font-family: 'Faster One', cursive;
-	margin: 800px 80px 0 80px;
+	margin: 780px 80px 0 80px;
 }
 
 .buttons p:hover {
@@ -71,7 +74,7 @@ div.meerinfo {
 }
 
 div {
-	width: 450px;
+	width: 430px;
 }
 
 div.rate {
@@ -81,7 +84,7 @@ div.rate {
 	padding: 20px 0 0 0;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
-	transition: all 0.8s;
+	
 }
 
 span.genre {
