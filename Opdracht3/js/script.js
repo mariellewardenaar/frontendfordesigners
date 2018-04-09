@@ -33,8 +33,9 @@ request.onload = function () {
 
     // de toggle functie
     imgfilm.addEventListener("click", function(event){
-      divmeerinfo.classList.toggle("meerinfo")
-    });//
+      divmeerinfo.classList.toggle("meerinfo");
+    }
+    );//
 
     imgfilm.src = obj.cover; // hier zeg je wat er in de 'img' moet staan
     divfilm.appendChild(imgfilm); // om 'img' in de section te laten vallen zet je dit neer, het is een child van de bovenste tak
@@ -80,7 +81,7 @@ buttonverder.addEventListener("click", scrollnaarright);
 // laat de button de sectie naar rechts verschuiven
   function scrollnaarright(){
     var positie = verschuiven.getBoundingClientRect(); //hierdoor wordt er gekeken naar de positie zodra die verschuifd
-    if( positie.x < -1100){ // als de positie groter is dan -1700 moet hij stoppen met verschuiven
+    if( positie.x < -880){ // als de positie groter is dan -1700 moet hij stoppen met verschuiven
       verschuiven.style.transform += 'translateX(0)';
     }
     else{
