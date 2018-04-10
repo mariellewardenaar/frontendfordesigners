@@ -6,7 +6,7 @@ De carrousel is op verschillende manieren te bedienen. Door de pijltjes toetsen 
 
 Tijdens het maken van de website heb ik gebruik gemaakt van de Principles of User Interface Design. Door de knoppen zijn de users in control. Zij bepalen wat en wanneer er wat op de website gebeurd. 
 
-![alt text](https://media.giphy.com/media/EpNGa22cAiO5yUgpHL/giphy.gif)
+![alt text](https://media.giphy.com/media/7TqWEmAAUZdnQxoFC1/giphy.gif)
 
 Voor het werken van de carrousel heb ik de volgende code gebruikt:
 
