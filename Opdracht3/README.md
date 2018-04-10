@@ -2,6 +2,8 @@ Link naar de website: http://ta-creations.nl/ta-creations.nl/login/Opdracht3/
 
 Op de pagina is een carrousel met verschillende films te vinden. Door de carrousel valt heen te sliden, daarnaast wordt er meer informatie over de film getoond, waneer je op de film drukt.
 
+![alt text](https://media.giphy.com/media/vNdFZUAudCTehMDRky/giphy.gif)
+
 De carrousel is op verschillende manieren te bedienen. Door de pijltjes toetsen onderaan de pagina, maar ook door de pijltjes toetsen op je toetsenbord. 
 
 Tijdens het maken van de website heb ik gebruik gemaakt van de Principles of User Interface Design. Door de knoppen zijn de users in control. Zij bepalen wat en wanneer er wat op de website gebeurd. 
@@ -76,7 +78,11 @@ request.onload = function () {
 
 ```
 
-Naast dat het belangrijk is dat de users in control blijven moeten de gebruikers ook kunnen begrijpen welke handelingen zij kunnen gaan verrichten. Dit maak ik de gebruikers duidelijk door de cursor te veranderen bij de hover staat van iets klikbaars. De cursor verandert dan in een handje.
+Naast dat het belangrijk is dat de users in control blijven moeten de gebruikers ook kunnen begrijpen welke handelingen zij kunnen gaan verrichten. Dit maak ik de gebruikers duidelijk door de cursor te veranderen bij de hover staat van iets klikbaars. De cursor verandert dan in een handje. Naast het veranderen van de cursor worden de afbeeldingen in de carrousel ook lichter zodra hier over heen wordt gehoverd.
+
+![alt text](https://media.giphy.com/media/5hgUcrZF5KPbJoKRZD/giphy.gif)
+
+Tenslotte speelt een strenge visuele hirarchie ook een rol. Door alles in dezelfde kleuren te stijlen met bijpassende lettertypes wordt dit principe opgevolgd. 
 
 
 
