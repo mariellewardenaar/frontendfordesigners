@@ -8,6 +8,8 @@ Tijdens het maken van de website heb ik gebruik gemaakt van de Principles of Use
 
 ![alt text](https://media.giphy.com/media/EpNGa22cAiO5yUgpHL/giphy.gif)
 
+Voor het werken van de carrousel heb ik de volgende code gebruikt:
+
 ```js
 var buttonterug = document.querySelector('.terug');
 var buttonverder = document.querySelector('.verder');
@@ -17,12 +19,12 @@ buttonverder.addEventListener("click", scrollnaarright);
 // laat de button de sectie naar rechts verschuiven
   function scrollnaarright(){
     var positie = verschuiven.getBoundingClientRect(); //hierdoor wordt er gekeken naar de positie zodra die verschuifd
-    if( positie.x < -880){ // als de positie groter is dan -1700 moet hij stoppen met verschuiven
+    if( positie.x < -880){ // als de positie groter is dan -880 moet hij stoppen met verschuiven
       verschuiven.style.transform += 'translateX(0)';
     }
     else{
       console.log("ik kom hier" + verschuiven)
-      verschuiven.style.transform += `translateX(-420px)`; //anders verschuifd de sectie met -400px
+      verschuiven.style.transform += `translateX(-420px)`; //anders verschuifd de sectie met -420px
     }
 }
 
@@ -36,7 +38,7 @@ buttonterug.addEventListener("click", scrollnaarleft);
       verschuiven.style.transform += 'translateX(0)';
     }
     else {
-    verschuiven.style.transform += 'translateX(420px)'; //anders verschuifd de sectie met 400px
+    verschuiven.style.transform += 'translateX(420px)'; //anders verschuifd de sectie met 420px
   }
 }
 
@@ -51,5 +53,31 @@ document.addEventListener('keydown', (event) => {
   }
 });
 ```
+
+Om dit te kunnen laten werken heb ik data nodig. Deze data haal ik op via een api. Door een een console log aan te koppelen kan ik zien of de data ook echt wordt opgehaald:
+
+```js
+
+var request = new XMLHttpRequest();
+
+request.open('GET', 'http://dennistel.nl/movies', true);
+request.onload = function () {
+
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response);
+
+  if (request.status >= 200 && request.status < 400) {
+    data.forEach(movie => {
+      console.log(movie.title);
+    });
+  } else {
+    console.log('error');
+  }
+
+```
+
+Naast dat het belangrijk is dat de users in control blijven moeten de gebruikers ook kunnen begrijpen welke handelingen zij kunnen gaan verrichten. Dit maak ik de gebruikers duidelijk door de cursor te veranderen bij de hover staat van iets klikbaars. De cursor verandert dan in een handje.
+
+
 
 
