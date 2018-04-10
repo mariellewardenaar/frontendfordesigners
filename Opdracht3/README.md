@@ -6,7 +6,19 @@ Op de pagina is een carrousel met verschillende films te vinden. Door de carrous
 
 De carrousel is op verschillende manieren te bedienen. Door de pijltjes toetsen onderaan de pagina, maar ook door de pijltjes toetsen op je toetsenbord. 
 
-Tijdens het maken van de website heb ik gebruik gemaakt van de Principles of User Interface Design. Door de knoppen zijn de users in control. Zij bepalen wat en wanneer er wat op de website gebeurd. 
+Het maken van de website begon met het maken van schetsen. Zodat ik beter kon indenken hoe de opbouw van mijn website in elkaar zal gaan zitten. Vanuit de schetsen ben ik verder gaan werken.
+
+Dit is een globale schets voor de gehele pagina:
+
+![alt text](https://github.com/mariellewardenaar/frontendfordesigners/blob/master/Opdracht3/img/schets.png)
+
+Daarnaast heb ik ook een schets gemaakt voor de meerinfo uitklap div:
+
+![alt text](https://github.com/mariellewardenaar/frontendfordesigners/blob/master/Opdracht3/img/toggleschets.png)
+
+Ik vond deze schetsen veel duidelijkheid geven in hoe de structuur van mijn pagina in elkaar moet gaan zitten.
+
+Vervolgens heb ik tijdens het maken van de website gebruik gemaakt van de Principles of User Interface Design. Door de knoppen zijn de users in control. Zij bepalen wat en wanneer er wat op de website gebeurd. 
 
 ![alt text](https://media.giphy.com/media/5hgUcrZF5KPbJoKRZD/giphy.gif)
 
